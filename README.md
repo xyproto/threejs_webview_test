@@ -1,4 +1,4 @@
-# threejs_webview_test
+# ThreeJS + WebView + Go test
 
 Testing the combination of webview and threejs.
 
