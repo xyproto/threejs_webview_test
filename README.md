@@ -9,3 +9,7 @@ This package uses:
 * [threejs](https://threejs.org/)
 
 WebGL does not seem to work in webview yet, so there will only be a white window showing up.
+
+Installation
+
+    go get -u github.com/xyproto/threejs_webview_test
