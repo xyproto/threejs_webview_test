@@ -11,12 +11,17 @@ import (
 )
 
 // threeJS r138
-// go:embed: js/three.min.js
+//go:embed js/three.min.js
 var threeJS string
 
 // ThreeJSPage will build and return an onthefly.Page containing threeJS code
 func ThreeJSPage() *onthefly.Page {
-	p, t := onthefly.NewThreeJSWithGiven("Embedded Three.js", threeJS)
+
+	if len(threeJS) == 0 {
+		return nil
+	}
+
+	p, t := onthefly.NewThreeJSWithGiven("Embedded ThreeJS", threeJS)
 
 	// Add a camera at (0, 0, 5)
 	t.AddCamera()
