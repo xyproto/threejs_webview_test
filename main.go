@@ -3,14 +3,20 @@ package main
 import (
 	"net/http"
 
+	_ "embed"
+
 	"github.com/urfave/negroni"
-	"github.com/xyproto/onthefly"
 	"github.com/webview/webview"
+	"github.com/xyproto/onthefly"
 )
 
-// Create a Three.JS page
+// threeJS r138
+// go:embed: js/three.min.js
+var threeJS string
+
+// ThreeJSPage will build and return an onthefly.Page containing threeJS code
 func ThreeJSPage() *onthefly.Page {
-	p, t := onthefly.NewThreeJSWithGiven("Embedded Three.js", threejsSrc)
+	p, t := onthefly.NewThreeJSWithGiven("Embedded Three.js", threeJS)
 
 	// Add a camera at (0, 0, 5)
 	t.AddCamera()
