@@ -5,7 +5,7 @@ import (
 
 	"github.com/urfave/negroni"
 	"github.com/xyproto/onthefly"
-	"github.com/zserge/webview"
+	"github.com/webview/webview"
 )
 
 // Create a Three.JS page
@@ -64,5 +64,11 @@ func main() {
 	}()
 
 	// Open three.js 3D graphics in a 1024x768 resizable window
-	webview.Open("Three JS", "http://localhost:1814/", 1024, 768, true)
+	debug := true
+	wv := webview.New(debug)
+	defer wv.Destroy()
+	wv.SetTitle("Three JS")
+	wv.SetSize(1024, 768, webview.HintNone)
+	wv.Navigate("http://localhost:1814/")
+	wv.Run()
 }
