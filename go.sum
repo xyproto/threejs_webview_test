@@ -1,8 +1,9 @@
 github.com/urfave/negroni v1.0.0 h1:kIimOitoypq34K7TG7DUaJ9kq/N4Ofuwi1sjz0KipXc=
 github.com/urfave/negroni v1.0.0/go.mod h1:Meg73S6kFm/4PpbYdq35yYWoCZ9mS/YSx+lKnmiohz4=
-github.com/webview/webview v0.0.0-20220314230258-a2b7746141c3 h1:8joKgFslmiNmyA0Cvw/xgkdKZOYiXKsHlnG5OWmJEHA=
-github.com/webview/webview v0.0.0-20220314230258-a2b7746141c3/go.mod h1:rpXAuuHgyEJb6kXcXldlkOjU6y4x+YcASKKXJNUhh0Y=
+github.com/webview/webview v0.0.0-20220729131735-25e7f41b8bbf h1:xGxamNQiDXDlPzCumBdLWflZDwruHkwJ1iORcpJmblk=
+github.com/webview/webview v0.0.0-20220729131735-25e7f41b8bbf/go.mod h1:rpXAuuHgyEJb6kXcXldlkOjU6y4x+YcASKKXJNUhh0Y=
 github.com/xyproto/onthefly v1.2.3 h1:91QuXkfqP7l4yFsGTGbN3S+iqYZLLJfVEWo4BFpewnA=
 github.com/xyproto/onthefly v1.2.3/go.mod h1:FQNxGnPtw8YSfZMHGbNKMGqtoI5ZZS+66Sw+eDTcTRE=
-github.com/xyproto/tinysvg v1.0.1 h1:UwuNaudh95O0BzdBJ4zQ0lTft5a4ToHKfo6xvKb3it0=
 github.com/xyproto/tinysvg v1.0.1/go.mod h1:DKgmaYuFIvJab9ug4nH4ZG356VtUaKXG2mUU07GIurs=
+github.com/xyproto/tinysvg v1.1.0 h1:g8NBSGR90npPhNnbmEIPbkxHdyiFXSQrm5mVVoFFRNA=
+github.com/xyproto/tinysvg v1.1.0/go.mod h1:DKgmaYuFIvJab9ug4nH4ZG356VtUaKXG2mUU07GIurs=
