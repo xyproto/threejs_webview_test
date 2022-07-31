@@ -69,7 +69,7 @@ func main() {
 	// Handler goes last
 	n.UseHandler(mux)
 
-	// Listen for requests at port 1814
+	// Listen for requests at a port that is unlikely to be in use
 	go func() {
 		n.Run(":1814")
 	}()
@@ -79,7 +79,7 @@ func main() {
 	wv := webview.New(debug)
 	defer wv.Destroy()
 	wv.SetTitle("Three JS")
-	wv.SetSize(1024, 768, webview.HintNone)
+	wv.SetSize(1024, 768, webview.HintFixed)
 	wv.Navigate("http://localhost:1814/")
 	wv.Run()
 }
