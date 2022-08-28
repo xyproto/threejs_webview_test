@@ -10,7 +10,7 @@ import (
 	"github.com/xyproto/onthefly"
 )
 
-// threeJS r138
+// threeJS r143
 //go:embed js/three.min.js
 var threeJS string
 
